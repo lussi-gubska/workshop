@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Workshop game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+
+	<div id="video-bg">
+		<video width="100%" preload="auto" autoplay="true" loop="true" muted="muted" poster="images/bg-poster.png">
+			<source src="images/bg.mp4" type="video/mp4">
+			</source>
+			<source src="images/bg.webm" type="video/webm">
+			</source>
+		</video>
+	</div>
+
+	<div id="app">
+		<div id="game" style="display: none;">
+			<div id="lifes">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<div id="options">
+				<div id="score">
+					Score: <span>0</span>
+				</div>
+				<div id="sound">
+					<img src="images/mute_sound.png">
+				</div>
+			</div>
+
+			<!-- <div class="boom" style="display:none"></div> -->
+			<!-- <div class="bullet"></div> -->
+
+
+			<div id="player" class="skin_1"></div>
+
+			<!-- <div class="enemy type-1"></div>
+			<div class="enemy type-2"></div> -->
+		</div>
+
+
+		<div id="start">
+			<audio src="audio/Slava Marlow - Вот Так Могу.mp3"></audio>
+			<h2>Выбери игрока</h2>
+
+			<!-- <dir id="knopki">
+				
+				<audio src="audio/Stay.mp3" id="twomelody"></audio>
+				<button id="buttonone">One</button>
+				<button id="buttontwo">Two</button>
+			</dir> -->
+			<div id="select-player" class="clearfix">
+				<span class="selected" id="skin_1">
+					<img src="images/player_1.png">
+				</span>
+
+				<span id="skin_2">
+					<img src="images/player_2.png">
+				</span>
+
+			</div>
+			<button id="startgame">Start</button>
+		</div>
+		<div id="end" style="display: none;">
+			<h2>Вы проиграли</h2>
+			<h3>Вы набрали: <span>20</span></h3>
+			<button>Играть снова</button>
+		</div>
+
+
+	</div>
+
+	<script src="script.js"></script>
+
+</body>
+
+</html>
